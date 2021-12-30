@@ -2,69 +2,75 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+const services = [
+        {
+            id: '01',
+            name: 'Preventative Maintenance',
+            img: 'https://i.ibb.co/VSx4L2Y/Servicing-1.jpg',
+            price: '720',
+            description: "We'll perform the car checkup and find issues with cooling system, engine, steering and suspension for you! You don't have to be an expert to do car maintenance!"
+        },
+        {
+            id: '02',
+            name: 'Preventative Maintenance',
+            img: 'https://i.ibb.co/t2v770Q/servicing-2.jpg',
+            price: '620',
+            description: "Each repair project puts before us a number of unique tasks, the solution of which will help to achieve the highest results! We do all kinds of repairing works!"
+        },
+        {
+            id: '03',
+            name: 'Preventative Maintenance',
+            img: 'https://i.ibb.co/wQdgxGx/servicing-3.webp',
+            price: '820',
+            description: "We're one of the most trusted experts in the diagnosis, service and maintenance of transmissions. We perform all the works and give a warranty on them!"
+        },
+        {
+            id: '04',
+            name: 'Preventative Maintenance',
+            img: 'https://i.ibb.co/tQmFWZL/servicing-4.webp',
+            price: '750',
+            description: "We'll perform the car checkup and find issues with cooling system, engine, steering and suspension for you! You don't have to be an expert to do car maintenance!"
+        },
+        {
+            id: '05',
+            name: 'Preventative Maintenance',
+            img: 'https://i.ibb.co/cggVq7L/servicing-5.jpg',
+            price: '420',
+            description: "Most cars today have complex electrical systems. We can provide routine service for you, and whenever you're experiencing electrical issues, our staff will assist you!"
+        },
+        {
+            id: '06',
+            name: 'Preventative Maintenance',
+            img: 'https://i.ibb.co/m8FS66F/servicing-6.jpg',
+            price: '500',
+            description: "We're one of the most trusted experts in the diagnosis, service and maintenance of transmissions. We perform all the works and give a warranty on them!"
+        },
+        {
+            id: '07',
+            name: 'Preventative Maintenance',
+            img: 'https://i.ibb.co/wMmXrz9/servicing-7.jpg',
+            price: '830',
+            description: "Each repair project puts before us a number of unique tasks, the solution of which will help to achieve the highest results! We do all kinds of repairing works!"
+        },
+        {
+            id: '08',
+            name: 'Preventative Maintenance',
+            img: 'https://i.ibb.co/JmGPKNP/servicing-8.jpg',
+            price: '720',
+            description: "Most cars today have complex electrical systems. We can provide routine service for you, and whenever you're experiencing electrical issues, our staff will assist you!"
+        },
+        {
+            id: '09',
+            name: 'Lighting Maintenance',
+            img: 'https://i.ibb.co/s5JTgcL/servicing-9.jpg',
+            price: '360',
+            description: "We're one of the most trusted experts in the diagnosis, service and maintenance of transmissions. We perform all the works and give a warranty on them!"
+        },
+        {
+            id: '10',
+            name: 'Break Maintenance',
+            img: 'https://i.ibb.co/2nfkfVL/servicing-10.jpg',
+            price: '480',
+            description: "Each repair project puts before us a number of unique tasks, the solution of which will help to achieve the highest results! We do all kinds of repairing works!"
+        },
+    ]
